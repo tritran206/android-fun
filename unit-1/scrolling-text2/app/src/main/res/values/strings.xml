@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Scrolling Text 2</string>
+    <string name="article_title">Android Developer Fundamentals</string>
+    <string name="article_subtitle">Working with TextView Elements</string>
+    <string name="article_text">The <b>Scrolling Text app</b> demonstrates the <i>ScrollView UI</i> component. ScrollView is a view group that in this example contains a TextView. It shows a lengthy page of text—in this case, a music album review—that the user can scroll vertically to read by swiping up and down. A scroll bar appears in the right margin. The app shows how you can use text formatted with minimal HTML tags for setting text to bold or italic, and with new-line characters to separate paragraphs. You can also include active web links in the text.
+        \n \n The Scrolling Text app demonstrates the ScrollView UI component. ScrollView is a view group that in this example contains a TextView. It shows a lengthy page of text—in this case, a music album review—that the user can scroll vertically to read by swiping up and down. A scroll bar appears in the right margin. The app shows how you can use text formatted with minimal HTML tags for setting text to bold or italic, and with new-line characters to separate paragraphs. You can also include active web links in the text.
+        \n \n Check out this Google link www.google.com
+    </string>
+</resources>
