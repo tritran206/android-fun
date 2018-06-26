@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     public void launchSecondActivity(View view) {
         //logs 'button clicked' when button is clicked and second activity is launched
         Log.d(LOG_TAG, "Button Clicked!");
-        //creates explicit intent using SecondActivity to recieve the intent
+        //creates explicit intent using SecondActivity to receive the intent
         Intent intent = new Intent(this, SecondActivity.class);
         //gets text from the editText object
         String message = mMessageEditText.getText().toString();
@@ -47,10 +47,12 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 String reply = data.getStringExtra(SecondActivity.EXTRA_REPLY);
 
+                //sets reply text and turn visibilty on for textViews
                 mReplyHeadTextView.setVisibility(View.VISIBLE);
                 mReplyTextView.setText(reply);
                 mReplyTextView.setVisibility(View.VISIBLE);
             }
         }
+        mMessageEditText.setText("");
     }
 }
