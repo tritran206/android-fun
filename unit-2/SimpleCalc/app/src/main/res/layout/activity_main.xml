@@ -63,13 +63,20 @@
             android:onClick="onDiv"/>
 
         <Button android:id="@+id/operation_mul_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mul_operation_text"
+        android:layout_below="@id/operation_add_btn"
+        android:layout_toRightOf="@id/operation_add_btn"
+        android:layout_toEndOf="@id/operation_add_btn"
+        android:onClick="onMul"/>
+
+        <Button android:id="@+id/operation_pow_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/mul_operation_text"
-            android:layout_below="@id/operation_add_btn"
-            android:layout_toRightOf="@id/operation_add_btn"
-            android:layout_toEndOf="@id/operation_add_btn"
-            android:onClick="onMul"/>
+            android:text="@string/pow_operation_btn"
+            android:layout_toRightOf="@id/operation_sub_btn"
+            android:onClick="onPow"/>
 
     </RelativeLayout>
 

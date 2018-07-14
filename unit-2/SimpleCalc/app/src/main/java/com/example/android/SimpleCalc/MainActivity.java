@@ -94,6 +94,8 @@ public class MainActivity extends Activity {
         compute(Calculator.Operator.MUL);
     }
 
+    public void onPow(View view) { compute(Calculator.Operator.POW); }
+
 
     private void compute(Calculator.Operator operator) {
         double operandOne;
@@ -121,6 +123,9 @@ public class MainActivity extends Activity {
             case MUL:
                 result = String.valueOf(mCalculator.mul(operandOne, operandTwo));
                 break;
+            case POW:
+                result = String.valueOf(mCalculator.pow(operandOne, operandTwo));
+                break;
             default:
                 result = getString(R.string.computationError);
                 break;
@@ -142,4 +147,6 @@ public class MainActivity extends Activity {
     private static String getOperandText(EditText operandEditText) {
         return operandEditText.getText().toString();
     }
+
+
 }

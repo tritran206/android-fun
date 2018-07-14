@@ -101,4 +101,48 @@ public class CalculatorTest {
         double resultDiv = mCalculator.div(2d, 0d);
         assertThat(resultDiv, is(equalTo(Double.POSITIVE_INFINITY)));
     }
+
+    @Test
+    public void powTwoPositiveNumbers() {
+        double resultPow = mCalculator.pow(2d, 3d);
+        assertThat(resultPow, is(equalTo(8d)));
+    }
+
+    @Test
+    public void powFirstValueNegative() {
+        double resultPow = mCalculator.pow(-3d, 3d);
+        assertThat(resultPow, is(equalTo(-27d)));
+    }
+
+    @Test
+    public void powSecondValueNegative() {
+        double resultPow = mCalculator.pow(2d, -2d);
+        assertThat(resultPow, is(equalTo(0.25d)));
+    }
+
+    @Test
+    public void powFirstValueZero() {
+        double resultPow = mCalculator.pow(0d, 2d);
+        assertThat(resultPow, is(equalTo(0d)));
+    }
+
+    @Test
+    public void powSecondValueZero() {
+        double resultPow = mCalculator.pow(2d, 0d);
+        assertThat(resultPow, is(equalTo(1d)));
+    }
+
+    @Test
+    public void powFirstValueZeroSecondValueNegative() {
+        double resultPow = mCalculator.pow(0d, -1d);
+        assertThat(resultPow, is(equalTo(Double.POSITIVE_INFINITY)));
+    }
+
+    @Test
+    public void powFirstValueNegativeZeroSecondValueNegative() {
+        double resultPow = mCalculator.pow(-0d, -1d);
+        assertThat(resultPow, is(equalTo(Double.NEGATIVE_INFINITY)));
+    }
+
+
 }

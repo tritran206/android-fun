@@ -1,9 +1,12 @@
 package com.tritranenterprise.hellocompat;
 
+import android.support.v4.app.DialogFragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -41,11 +44,27 @@ public class MainActivity extends AppCompatActivity {
         String colorName = mColorArray[random.nextInt(20)];
         //The getResources() method gets all the resources for your app.
         // The getIdentifier() method looks up the color name (the string) in the color resources ("color") for the current package name.
-        int colorResourceName = getResources().getIdentifier(colorName,
-                "color", getApplicationContext().getPackageName());
+        int colorResourceName = getResources().getIdentifier(colorName,"color", getApplicationContext().getPackageName());
         //The getResources() method gets the set of resources for your app
         // the getColor() method retrieves a specific color from those resources by the ID of the color name.
-        int colorRes = getResources().getColor(colorResourceName);
+//        int colorRes = getResources().getColor(colorResourceName);
+        int colorRes = ContextCompat.getColor(this, colorResourceName);
         mHelloTextView.setTextColor(colorRes);
     }
+
+//    public void showDatePickerDialog(View v) {
+//        DialogFragment newFragment = new DatePickerFragment();
+//        newFragment.show(getSupportFragmentManager(), "datePicker");
+//    }
+
+//    public void processDatePickerResult(int year, int month, int day) {
+//        String month_string = Integer.toString(month + 1);
+//        String day_string = Integer.toString(day);
+//        String year_string = Integer.toString(year);
+//        // Assign the concatenated strings to dateMessage.
+//        String dateMessage = (month_string + "/" +
+//                day_string + "/" + year_string);
+//        Toast.makeText(this, getString(R.string.date) + dateMessage,
+//                Toast.LENGTH_SHORT).show();
+//    }
 }
