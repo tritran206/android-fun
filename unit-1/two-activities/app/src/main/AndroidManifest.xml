@@ -6,16 +6,28 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+<<<<<<< HEAD
+=======
+        android:roundIcon="@mipmap/ic_launcher_round"
+>>>>>>> 347a73abb53411364ca69f9137d897638bf37038
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+<<<<<<< HEAD
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".SecondActivity"
+=======
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity"
+>>>>>>> 347a73abb53411364ca69f9137d897638bf37038
             android:label="@string/activity2_name"
             android:parentActivityName=".MainActivity">
             <meta-data
