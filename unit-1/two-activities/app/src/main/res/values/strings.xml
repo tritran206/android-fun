@@ -1,10 +1,18 @@
 <resources>
     <string name="app_name">Two Activities</string>
     <string name="button_main">Send</string>
+<<<<<<< HEAD
+    <string name="button_second">Reply</string>
+    <string name="activity2_name">Second Activity</string>
+    <string name="text_header">Message Received</string>
+    <string name="editText_main">Enter your message here</string>
+    <string name="editText_second">Enter your reply here</string>
+=======
     <string name="activity2_name">Second Activity</string>
     <string name="text_header">Message Received</string>
     <string name="editText_main">Enter Your Message Here</string>
     <string name="button_second">Reply</string>
     <string name="editText_second">Enter Your Reply Here</string>
+>>>>>>> 347a73abb53411364ca69f9137d897638bf37038
     <string name="text_header_reply">Reply Received</string>
 </resources>

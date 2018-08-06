@@ -13,29 +13,49 @@
         android:id="@+id/text_header_reply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="@string/text_header_reply"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+=======
         android:text="@string/text_header_reply"
         android:visibility="invisible"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textStyle="bold"/>
+>>>>>>> 347a73abb53411364ca69f9137d897638bf37038
 
     <TextView
         android:id="@+id/text_message_reply"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_header_reply"
+<<<<<<< HEAD
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="invisible" />
+=======
         android:visibility="invisible"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+>>>>>>> 347a73abb53411364ca69f9137d897638bf37038
 
     <Button
         android:id="@+id/button_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+<<<<<<< HEAD
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+=======
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+>>>>>>> 347a73abb53411364ca69f9137d897638bf37038
         android:onClick="launchSecondActivity"
         android:text="@string/button_main" />
 
@@ -47,5 +67,8 @@
         android:layout_toLeftOf="@+id/button_main"
         android:layout_toStartOf="@+id/button_main"
         android:hint="@string/editText_main" />
+<<<<<<< HEAD
+=======
 
+>>>>>>> 347a73abb53411364ca69f9137d897638bf37038
 </RelativeLayout>

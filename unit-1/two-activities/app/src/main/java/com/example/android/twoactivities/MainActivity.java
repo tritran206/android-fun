@@ -6,6 +6,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+<<<<<<< HEAD
+
+public class MainActivity extends AppCompatActivity {
+    public static final String EXTRA_MESSAGE = "com.example.android.twoactivities.extra.MESSAGE";
+    private EditText mMessageEditText;
+    private static final String LOG_TAG = MainActivity.class.getSimpleName();
+=======
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,11 +23,24 @@ public class MainActivity extends AppCompatActivity {
     public static final int TEXT_REQUEST = 1;
     private TextView mReplyHeadTextView;
     private TextView mReplyTextView;
+>>>>>>> 347a73abb53411364ca69f9137d897638bf37038
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
+        mMessageEditText = (EditText) findViewById(R.id.editText_main);
+    }
+
+    public void launchSecondActivity(View view) {
+        Log.d(LOG_TAG, "Button clicked!");
+        Intent intent = new Intent(this, SecondActivity.class);
+        String message = mMessageEditText.getText().toString();
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+
+=======
         //finds editText object by its id
         mMessageEditText = findViewById(R.id.editText_main);
         mReplyHeadTextView = findViewById(R.id.text_header_reply);
@@ -118,5 +138,6 @@ public class MainActivity extends AppCompatActivity {
             outState.putBoolean("reply_visible", true);
             outState.putString("reply_text", mReplyTextView.getText().toString());
         }
+>>>>>>> 347a73abb53411364ca69f9137d897638bf37038
     }
 }
