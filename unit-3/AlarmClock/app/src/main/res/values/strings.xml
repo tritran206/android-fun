@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Alarm Clock</string>
+    <string name="true_toast">Alarm has been set to 11:11</string>
+    <string name="false_toast">Alarm has been deactivated</string>
+    <string name="notification_title">Make a Wish!</string>
+    <string name="notification_text">its 11:11!</string>
+    <string name="wish_alarm">Wish alarm</string>
+</resources>
